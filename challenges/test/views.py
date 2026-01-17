@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("hey am a  backend dev")
+    return render(request,"index.html")
 
 def feb(request):
     return HttpResponse("Bhai kam kaj seekh le")
+
+
+def march(request,month):
+    return HttpResponse(f"Current Month is {month}")
+
+
