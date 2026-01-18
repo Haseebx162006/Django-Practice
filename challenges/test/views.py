@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request,"index.html")
+    parrams={"name":"Haseeb","place":"Kasur"}
+    return render(request,"index.html",parrams)
 
 def feb(request):
     return HttpResponse("Bhai kam kaj seekh le")
